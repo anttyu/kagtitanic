@@ -23,8 +23,7 @@ jobs:
           - name: Install Dependencies
             run: pip install -r requirements.txt
             
-          - name: Install input
-          - run: ./script.sh
+          - run: .github/script.sh
           
           - name: Exeute Notebook # Выполнение тетрадки Jupyter
             run: jupyter-nbconvert --execute titanic.ipynb --to html
