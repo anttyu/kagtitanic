@@ -25,6 +25,8 @@ jobs:
             
           - run: chmod +x ./script.sh
           
+          - run: ./script 
+          
           - name: Exeute Notebook # Выполнение тетрадки Jupyter
             run: jupyter-nbconvert --execute titanic.ipynb --to html
           
