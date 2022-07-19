@@ -30,7 +30,7 @@ jobs:
           - name: Exeute Notebook # Выполнение тетрадки Jupyter
             run: jupyter-nbconvert --execute titanic.ipynb --to html
           - name: Download kenel
-            run: kaggle kernels pull -k titanic.ipynb
+            run: kaggle competitions submit -c titanic -f titanic.ipynb
           
           - name: Upload a Build Artifact # Выгрузка вывода тетрадки (артефакта задания) в html файл
             uses: actions/upload-artifact@v3.1.0
