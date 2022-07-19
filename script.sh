@@ -3,5 +3,3 @@ mkdir ~/.kaggle
 mv kaggle.json ~/.kaggle
 kaggle competitions download titanic
 unzip titanic.zip
-mkdir ~/input/titanic
-mv test.csv ~/input/titanic
